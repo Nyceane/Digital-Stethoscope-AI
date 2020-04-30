@@ -1,5 +1,3 @@
-# Speech Commands Example
-
-This is a basic speech recognition example. For more information, see the
-tutorial at https://www.tensorflow.org/tutorials/sequences/audio_recognition.
 # Digital-Stethoscope-AI
+
+We are following the audio recognition to run this program, you can go to https://www.tensorflow.org/tutorials/sequences/audio_recognition to get a full understanding.
