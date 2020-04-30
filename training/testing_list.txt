@@ -1,0 +1,12 @@
+background_noise/dude_miaowing.wav
+COPD/176_2b3_Tc_mc_AKGC417L.wav
+Pneumonia/135_2b1_Tc_mc_LittC2SE.wav
+Heartbeat/normal__103_1305031931979_B.wav 
+Healthy/217_1b1_Tc_sc_Meditron.wav
+COPD/211_2p2_Tc_mc_AKGC417L.wav 
+Healthy/144_1b1_Tc_sc_Meditron.wav
+COPD/130_1p2_Tc_mc_AKGC417L.wav
+URTI/190_1b1_Tc_sc_Meditron.wav
+Heartbeat/normal__154_1306935608852_B1.wav
+Pneumonia/219_2b2_Tc_mc_LittC2SE.wav
+
