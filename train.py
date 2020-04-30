@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
-r"""Simple speech recognition to spot a limited number of keywords.
+"""Simple speech recognition to spot a limited number of keywords.
 
 This is a self-contained example script that will train a very basic audio
 recognition model in TensorFlow. It downloads the necessary training data and
@@ -334,7 +334,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--data_dir',
       type=str,
-      default='training',
+      default='training_data',
       help="""\
       Where to download the speech training data to.
       """)
@@ -438,7 +438,8 @@ if __name__ == '__main__':
   parser.add_argument(
       '--wanted_words',
       type=str,
-      default='background_noise,pneumonia,heart_beat,copd,urti,bronchiectasis,healthy',
+      default='pneumonia,copd,urti,bronchiectasis,healthy',
+      #default='cat,bed,left,seven,happy,wow,dog,backward,up,marvin,sheila,no,four,eight,learn,tree,house,down,five,right,visual,go,bird,follow,two,one,zero,stop,yes,six,forward,on,three,nine,off',
       help='Words to use (others will be added to an unknown label)',)
   parser.add_argument(
       '--train_dir',

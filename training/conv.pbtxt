@@ -1952,7 +1952,7 @@ node {
             size: 2
           }
         }
-        tensor_content: "\000\365\000\000\t\000\000\000"
+        tensor_content: "\000\365\000\000\007\000\000\000"
       }
     }
   }
@@ -2130,7 +2130,7 @@ node {
           size: 62720
         }
         dim {
-          size: 9
+          size: 7
         }
       }
     }
@@ -2194,7 +2194,7 @@ node {
         dtype: DT_FLOAT
         tensor_shape {
           dim {
-            size: 9
+            size: 7
           }
         }
         float_val: 0.0
@@ -2237,7 +2237,7 @@ node {
     value {
       shape {
         dim {
-          size: 9
+          size: 7
         }
       }
     }
@@ -6105,7 +6105,7 @@ node {
     key: "else_branch"
     value {
       func {
-        name: "confusion_matrix_assert_non_negative_assert_less_equal_Assert_AssertGuard_false_298"
+        name: "confusion_matrix_assert_non_negative_assert_less_equal_Assert_AssertGuard_false_303"
       }
     }
   }
@@ -6122,7 +6122,7 @@ node {
     key: "then_branch"
     value {
       func {
-        name: "confusion_matrix_assert_non_negative_assert_less_equal_Assert_AssertGuard_true_297"
+        name: "confusion_matrix_assert_non_negative_assert_less_equal_Assert_AssertGuard_true_302"
       }
     }
   }
@@ -6342,7 +6342,7 @@ node {
     key: "else_branch"
     value {
       func {
-        name: "confusion_matrix_assert_non_negative_1_assert_less_equal_Assert_AssertGuard_false_321"
+        name: "confusion_matrix_assert_non_negative_1_assert_less_equal_Assert_AssertGuard_false_326"
       }
     }
   }
@@ -6359,7 +6359,7 @@ node {
     key: "then_branch"
     value {
       func {
-        name: "confusion_matrix_assert_non_negative_1_assert_less_equal_Assert_AssertGuard_true_320"
+        name: "confusion_matrix_assert_non_negative_1_assert_less_equal_Assert_AssertGuard_true_325"
       }
     }
   }
@@ -6411,7 +6411,7 @@ node {
         dtype: DT_INT32
         tensor_shape {
         }
-        int_val: 9
+        int_val: 7
       }
     }
   }
@@ -6625,7 +6625,7 @@ node {
     key: "else_branch"
     value {
       func {
-        name: "confusion_matrix_assert_less_Assert_AssertGuard_false_346"
+        name: "confusion_matrix_assert_less_Assert_AssertGuard_false_351"
       }
     }
   }
@@ -6642,7 +6642,7 @@ node {
     key: "then_branch"
     value {
       func {
-        name: "confusion_matrix_assert_less_Assert_AssertGuard_true_345"
+        name: "confusion_matrix_assert_less_Assert_AssertGuard_true_350"
       }
     }
   }
@@ -6864,7 +6864,7 @@ node {
     key: "else_branch"
     value {
       func {
-        name: "confusion_matrix_assert_less_1_Assert_AssertGuard_false_372"
+        name: "confusion_matrix_assert_less_1_Assert_AssertGuard_false_377"
       }
     }
   }
@@ -6881,7 +6881,7 @@ node {
     key: "then_branch"
     value {
       func {
-        name: "confusion_matrix_assert_less_1_Assert_AssertGuard_true_371"
+        name: "confusion_matrix_assert_less_1_Assert_AssertGuard_true_376"
       }
     }
   }
@@ -6936,7 +6936,7 @@ node {
             size: 2
           }
         }
-        tensor_content: "\t\000\000\000\t\000\000\000"
+        tensor_content: "\007\000\000\000\007\000\000\000"
       }
     }
   }
@@ -7856,108 +7856,13 @@ node {
 library {
   function {
     signature {
-      name: "confusion_matrix_assert_less_1_Assert_AssertGuard_true_371"
+      name: "confusion_matrix_assert_non_negative_1_assert_less_equal_Assert_AssertGuard_false_326"
       input_arg {
-        name: "identity_confusion_matrix_assert_less_1_all"
+        name: "assert_confusion_matrix_assert_non_negative_1_assert_less_equal_all"
         type: DT_BOOL
       }
       input_arg {
-        name: "placeholder"
-        type: DT_INT64
-      }
-      input_arg {
-        name: "placeholder_1"
-        type: DT_INT64
-      }
-      output_arg {
-        name: "identity"
-        type: DT_BOOL
-      }
-    }
-    node_def {
-      name: "NoOp"
-      op: "NoOp"
-      experimental_debug_info {
-        original_node_names: "NoOp"
-      }
-    }
-    node_def {
-      name: "Identity"
-      op: "Identity"
-      input: "identity_confusion_matrix_assert_less_1_all"
-      input: "^NoOp"
-      attr {
-        key: "T"
-        value {
-          type: DT_BOOL
-        }
-      }
-      experimental_debug_info {
-        original_node_names: "Identity"
-      }
-    }
-    ret {
-      key: "identity"
-      value: "Identity:output:0"
-    }
-    arg_attr {
-      value {
-        attr {
-          key: "_output_shapes"
-          value {
-            list {
-              shape {
-              }
-            }
-          }
-        }
-      }
-    }
-    arg_attr {
-      key: 1
-      value {
-        attr {
-          key: "_output_shapes"
-          value {
-            list {
-              shape {
-                dim {
-                  size: -1
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    arg_attr {
-      key: 2
-      value {
-        attr {
-          key: "_output_shapes"
-          value {
-            list {
-              shape {
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  function {
-    signature {
-      name: "confusion_matrix_assert_less_1_Assert_AssertGuard_false_372"
-      input_arg {
-        name: "assert_confusion_matrix_assert_less_1_all"
-        type: DT_BOOL
-      }
-      input_arg {
-        name: "assert_confusion_matrix_control_dependency_1"
-        type: DT_INT64
-      }
-      input_arg {
-        name: "assert_confusion_matrix_cast"
+        name: "assert_argmax"
         type: DT_INT64
       }
       output_arg {
@@ -7982,217 +7887,7 @@ library {
             dtype: DT_STRING
             tensor_shape {
             }
-            string_val: "`predictions` out of bound"
-          }
-        }
-      }
-      experimental_debug_info {
-        original_node_names: "Assert/data_0"
-      }
-    }
-    node_def {
-      name: "Assert/data_1"
-      op: "Const"
-      attr {
-        key: "dtype"
-        value {
-          type: DT_STRING
-        }
-      }
-      attr {
-        key: "value"
-        value {
-          tensor {
-            dtype: DT_STRING
-            tensor_shape {
-            }
-            string_val: "Condition x < y did not hold element-wise:"
-          }
-        }
-      }
-      experimental_debug_info {
-        original_node_names: "Assert/data_1"
-      }
-    }
-    node_def {
-      name: "Assert/data_2"
-      op: "Const"
-      attr {
-        key: "dtype"
-        value {
-          type: DT_STRING
-        }
-      }
-      attr {
-        key: "value"
-        value {
-          tensor {
-            dtype: DT_STRING
-            tensor_shape {
-            }
-            string_val: "x (confusion_matrix/control_dependency_1:0) = "
-          }
-        }
-      }
-      experimental_debug_info {
-        original_node_names: "Assert/data_2"
-      }
-    }
-    node_def {
-      name: "Assert/data_4"
-      op: "Const"
-      attr {
-        key: "dtype"
-        value {
-          type: DT_STRING
-        }
-      }
-      attr {
-        key: "value"
-        value {
-          tensor {
-            dtype: DT_STRING
-            tensor_shape {
-            }
-            string_val: "y (confusion_matrix/Cast:0) = "
-          }
-        }
-      }
-      experimental_debug_info {
-        original_node_names: "Assert/data_4"
-      }
-    }
-    node_def {
-      name: "Assert"
-      op: "Assert"
-      input: "assert_confusion_matrix_assert_less_1_all"
-      input: "Assert/data_0:output:0"
-      input: "Assert/data_1:output:0"
-      input: "Assert/data_2:output:0"
-      input: "assert_confusion_matrix_control_dependency_1"
-      input: "Assert/data_4:output:0"
-      input: "assert_confusion_matrix_cast"
-      attr {
-        key: "T"
-        value {
-          list {
-            type: DT_STRING
-            type: DT_STRING
-            type: DT_STRING
-            type: DT_INT64
-            type: DT_STRING
-            type: DT_INT64
-          }
-        }
-      }
-      attr {
-        key: "summarize"
-        value {
-          i: 3
-        }
-      }
-      experimental_debug_info {
-        original_node_names: "Assert"
-      }
-    }
-    node_def {
-      name: "Identity"
-      op: "Identity"
-      input: "assert_confusion_matrix_assert_less_1_all"
-      input: "^Assert"
-      attr {
-        key: "T"
-        value {
-          type: DT_BOOL
-        }
-      }
-      experimental_debug_info {
-        original_node_names: "Identity"
-      }
-    }
-    ret {
-      key: "identity"
-      value: "Identity:output:0"
-    }
-    arg_attr {
-      value {
-        attr {
-          key: "_output_shapes"
-          value {
-            list {
-              shape {
-              }
-            }
-          }
-        }
-      }
-    }
-    arg_attr {
-      key: 1
-      value {
-        attr {
-          key: "_output_shapes"
-          value {
-            list {
-              shape {
-                dim {
-                  size: -1
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    arg_attr {
-      key: 2
-      value {
-        attr {
-          key: "_output_shapes"
-          value {
-            list {
-              shape {
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  function {
-    signature {
-      name: "confusion_matrix_assert_non_negative_assert_less_equal_Assert_AssertGuard_false_298"
-      input_arg {
-        name: "assert_confusion_matrix_assert_non_negative_assert_less_equal_all"
-        type: DT_BOOL
-      }
-      input_arg {
-        name: "assert_groundtruth_input"
-        type: DT_INT64
-      }
-      output_arg {
-        name: "identity"
-        type: DT_BOOL
-      }
-      is_stateful: true
-    }
-    node_def {
-      name: "Assert/data_0"
-      op: "Const"
-      attr {
-        key: "dtype"
-        value {
-          type: DT_STRING
-        }
-      }
-      attr {
-        key: "value"
-        value {
-          tensor {
-            dtype: DT_STRING
-            tensor_shape {
-            }
-            string_val: "`labels` contains negative values"
+            string_val: "`predictions` contains negative values"
           }
         }
       }
@@ -8240,7 +7935,7 @@ library {
             dtype: DT_STRING
             tensor_shape {
             }
-            string_val: "x (groundtruth_input:0) = "
+            string_val: "x (ArgMax:0) = "
           }
         }
       }
@@ -8251,11 +7946,11 @@ library {
     node_def {
       name: "Assert"
       op: "Assert"
-      input: "assert_confusion_matrix_assert_non_negative_assert_less_equal_all"
+      input: "assert_confusion_matrix_assert_non_negative_1_assert_less_equal_all"
       input: "Assert/data_0:output:0"
       input: "Assert/data_1:output:0"
       input: "Assert/data_2:output:0"
-      input: "assert_groundtruth_input"
+      input: "assert_argmax"
       attr {
         key: "T"
         value {
@@ -8280,7 +7975,7 @@ library {
     node_def {
       name: "Identity"
       op: "Identity"
-      input: "assert_confusion_matrix_assert_non_negative_assert_less_equal_all"
+      input: "assert_confusion_matrix_assert_non_negative_1_assert_less_equal_all"
       input: "^Assert"
       attr {
         key: "T"
@@ -8329,7 +8024,7 @@ library {
   }
   function {
     signature {
-      name: "confusion_matrix_assert_less_Assert_AssertGuard_false_346"
+      name: "confusion_matrix_assert_less_Assert_AssertGuard_false_351"
       input_arg {
         name: "assert_confusion_matrix_assert_less_all"
         type: DT_BOOL
@@ -8543,7 +8238,175 @@ library {
   }
   function {
     signature {
-      name: "confusion_matrix_assert_non_negative_1_assert_less_equal_Assert_AssertGuard_true_320"
+      name: "confusion_matrix_assert_non_negative_assert_less_equal_Assert_AssertGuard_false_303"
+      input_arg {
+        name: "assert_confusion_matrix_assert_non_negative_assert_less_equal_all"
+        type: DT_BOOL
+      }
+      input_arg {
+        name: "assert_groundtruth_input"
+        type: DT_INT64
+      }
+      output_arg {
+        name: "identity"
+        type: DT_BOOL
+      }
+      is_stateful: true
+    }
+    node_def {
+      name: "Assert/data_0"
+      op: "Const"
+      attr {
+        key: "dtype"
+        value {
+          type: DT_STRING
+        }
+      }
+      attr {
+        key: "value"
+        value {
+          tensor {
+            dtype: DT_STRING
+            tensor_shape {
+            }
+            string_val: "`labels` contains negative values"
+          }
+        }
+      }
+      experimental_debug_info {
+        original_node_names: "Assert/data_0"
+      }
+    }
+    node_def {
+      name: "Assert/data_1"
+      op: "Const"
+      attr {
+        key: "dtype"
+        value {
+          type: DT_STRING
+        }
+      }
+      attr {
+        key: "value"
+        value {
+          tensor {
+            dtype: DT_STRING
+            tensor_shape {
+            }
+            string_val: "Condition x >= 0 did not hold element-wise:"
+          }
+        }
+      }
+      experimental_debug_info {
+        original_node_names: "Assert/data_1"
+      }
+    }
+    node_def {
+      name: "Assert/data_2"
+      op: "Const"
+      attr {
+        key: "dtype"
+        value {
+          type: DT_STRING
+        }
+      }
+      attr {
+        key: "value"
+        value {
+          tensor {
+            dtype: DT_STRING
+            tensor_shape {
+            }
+            string_val: "x (groundtruth_input:0) = "
+          }
+        }
+      }
+      experimental_debug_info {
+        original_node_names: "Assert/data_2"
+      }
+    }
+    node_def {
+      name: "Assert"
+      op: "Assert"
+      input: "assert_confusion_matrix_assert_non_negative_assert_less_equal_all"
+      input: "Assert/data_0:output:0"
+      input: "Assert/data_1:output:0"
+      input: "Assert/data_2:output:0"
+      input: "assert_groundtruth_input"
+      attr {
+        key: "T"
+        value {
+          list {
+            type: DT_STRING
+            type: DT_STRING
+            type: DT_STRING
+            type: DT_INT64
+          }
+        }
+      }
+      attr {
+        key: "summarize"
+        value {
+          i: 3
+        }
+      }
+      experimental_debug_info {
+        original_node_names: "Assert"
+      }
+    }
+    node_def {
+      name: "Identity"
+      op: "Identity"
+      input: "assert_confusion_matrix_assert_non_negative_assert_less_equal_all"
+      input: "^Assert"
+      attr {
+        key: "T"
+        value {
+          type: DT_BOOL
+        }
+      }
+      experimental_debug_info {
+        original_node_names: "Identity"
+      }
+    }
+    ret {
+      key: "identity"
+      value: "Identity:output:0"
+    }
+    arg_attr {
+      value {
+        attr {
+          key: "_output_shapes"
+          value {
+            list {
+              shape {
+              }
+            }
+          }
+        }
+      }
+    }
+    arg_attr {
+      key: 1
+      value {
+        attr {
+          key: "_output_shapes"
+          value {
+            list {
+              shape {
+                dim {
+                  size: -1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  function {
+    signature {
+      name: "confusion_matrix_assert_non_negative_1_assert_less_equal_Assert_AssertGuard_true_325"
       input_arg {
         name: "identity_confusion_matrix_assert_non_negative_1_assert_less_equal_all"
         type: DT_BOOL
@@ -8616,127 +8479,36 @@ library {
   }
   function {
     signature {
-      name: "confusion_matrix_assert_non_negative_1_assert_less_equal_Assert_AssertGuard_false_321"
+      name: "confusion_matrix_assert_less_1_Assert_AssertGuard_true_376"
       input_arg {
-        name: "assert_confusion_matrix_assert_non_negative_1_assert_less_equal_all"
+        name: "identity_confusion_matrix_assert_less_1_all"
         type: DT_BOOL
       }
       input_arg {
-        name: "assert_argmax"
+        name: "placeholder"
+        type: DT_INT64
+      }
+      input_arg {
+        name: "placeholder_1"
         type: DT_INT64
       }
       output_arg {
         name: "identity"
         type: DT_BOOL
       }
-      is_stateful: true
     }
     node_def {
-      name: "Assert/data_0"
-      op: "Const"
-      attr {
-        key: "dtype"
-        value {
-          type: DT_STRING
-        }
-      }
-      attr {
-        key: "value"
-        value {
-          tensor {
-            dtype: DT_STRING
-            tensor_shape {
-            }
-            string_val: "`predictions` contains negative values"
-          }
-        }
-      }
+      name: "NoOp"
+      op: "NoOp"
       experimental_debug_info {
-        original_node_names: "Assert/data_0"
-      }
-    }
-    node_def {
-      name: "Assert/data_1"
-      op: "Const"
-      attr {
-        key: "dtype"
-        value {
-          type: DT_STRING
-        }
-      }
-      attr {
-        key: "value"
-        value {
-          tensor {
-            dtype: DT_STRING
-            tensor_shape {
-            }
-            string_val: "Condition x >= 0 did not hold element-wise:"
-          }
-        }
-      }
-      experimental_debug_info {
-        original_node_names: "Assert/data_1"
-      }
-    }
-    node_def {
-      name: "Assert/data_2"
-      op: "Const"
-      attr {
-        key: "dtype"
-        value {
-          type: DT_STRING
-        }
-      }
-      attr {
-        key: "value"
-        value {
-          tensor {
-            dtype: DT_STRING
-            tensor_shape {
-            }
-            string_val: "x (ArgMax:0) = "
-          }
-        }
-      }
-      experimental_debug_info {
-        original_node_names: "Assert/data_2"
-      }
-    }
-    node_def {
-      name: "Assert"
-      op: "Assert"
-      input: "assert_confusion_matrix_assert_non_negative_1_assert_less_equal_all"
-      input: "Assert/data_0:output:0"
-      input: "Assert/data_1:output:0"
-      input: "Assert/data_2:output:0"
-      input: "assert_argmax"
-      attr {
-        key: "T"
-        value {
-          list {
-            type: DT_STRING
-            type: DT_STRING
-            type: DT_STRING
-            type: DT_INT64
-          }
-        }
-      }
-      attr {
-        key: "summarize"
-        value {
-          i: 3
-        }
-      }
-      experimental_debug_info {
-        original_node_names: "Assert"
+        original_node_names: "NoOp"
       }
     }
     node_def {
       name: "Identity"
       op: "Identity"
-      input: "assert_confusion_matrix_assert_non_negative_1_assert_less_equal_all"
-      input: "^Assert"
+      input: "identity_confusion_matrix_assert_less_1_all"
+      input: "^NoOp"
       attr {
         key: "T"
         value {
@@ -8781,10 +8553,24 @@ library {
         }
       }
     }
+    arg_attr {
+      key: 2
+      value {
+        attr {
+          key: "_output_shapes"
+          value {
+            list {
+              shape {
+              }
+            }
+          }
+        }
+      }
+    }
   }
   function {
     signature {
-      name: "confusion_matrix_assert_non_negative_assert_less_equal_Assert_AssertGuard_true_297"
+      name: "confusion_matrix_assert_non_negative_assert_less_equal_Assert_AssertGuard_true_302"
       input_arg {
         name: "identity_confusion_matrix_assert_non_negative_assert_less_equal_all"
         type: DT_BOOL
@@ -8857,7 +8643,221 @@ library {
   }
   function {
     signature {
-      name: "confusion_matrix_assert_less_Assert_AssertGuard_true_345"
+      name: "confusion_matrix_assert_less_1_Assert_AssertGuard_false_377"
+      input_arg {
+        name: "assert_confusion_matrix_assert_less_1_all"
+        type: DT_BOOL
+      }
+      input_arg {
+        name: "assert_confusion_matrix_control_dependency_1"
+        type: DT_INT64
+      }
+      input_arg {
+        name: "assert_confusion_matrix_cast"
+        type: DT_INT64
+      }
+      output_arg {
+        name: "identity"
+        type: DT_BOOL
+      }
+      is_stateful: true
+    }
+    node_def {
+      name: "Assert/data_0"
+      op: "Const"
+      attr {
+        key: "dtype"
+        value {
+          type: DT_STRING
+        }
+      }
+      attr {
+        key: "value"
+        value {
+          tensor {
+            dtype: DT_STRING
+            tensor_shape {
+            }
+            string_val: "`predictions` out of bound"
+          }
+        }
+      }
+      experimental_debug_info {
+        original_node_names: "Assert/data_0"
+      }
+    }
+    node_def {
+      name: "Assert/data_1"
+      op: "Const"
+      attr {
+        key: "dtype"
+        value {
+          type: DT_STRING
+        }
+      }
+      attr {
+        key: "value"
+        value {
+          tensor {
+            dtype: DT_STRING
+            tensor_shape {
+            }
+            string_val: "Condition x < y did not hold element-wise:"
+          }
+        }
+      }
+      experimental_debug_info {
+        original_node_names: "Assert/data_1"
+      }
+    }
+    node_def {
+      name: "Assert/data_2"
+      op: "Const"
+      attr {
+        key: "dtype"
+        value {
+          type: DT_STRING
+        }
+      }
+      attr {
+        key: "value"
+        value {
+          tensor {
+            dtype: DT_STRING
+            tensor_shape {
+            }
+            string_val: "x (confusion_matrix/control_dependency_1:0) = "
+          }
+        }
+      }
+      experimental_debug_info {
+        original_node_names: "Assert/data_2"
+      }
+    }
+    node_def {
+      name: "Assert/data_4"
+      op: "Const"
+      attr {
+        key: "dtype"
+        value {
+          type: DT_STRING
+        }
+      }
+      attr {
+        key: "value"
+        value {
+          tensor {
+            dtype: DT_STRING
+            tensor_shape {
+            }
+            string_val: "y (confusion_matrix/Cast:0) = "
+          }
+        }
+      }
+      experimental_debug_info {
+        original_node_names: "Assert/data_4"
+      }
+    }
+    node_def {
+      name: "Assert"
+      op: "Assert"
+      input: "assert_confusion_matrix_assert_less_1_all"
+      input: "Assert/data_0:output:0"
+      input: "Assert/data_1:output:0"
+      input: "Assert/data_2:output:0"
+      input: "assert_confusion_matrix_control_dependency_1"
+      input: "Assert/data_4:output:0"
+      input: "assert_confusion_matrix_cast"
+      attr {
+        key: "T"
+        value {
+          list {
+            type: DT_STRING
+            type: DT_STRING
+            type: DT_STRING
+            type: DT_INT64
+            type: DT_STRING
+            type: DT_INT64
+          }
+        }
+      }
+      attr {
+        key: "summarize"
+        value {
+          i: 3
+        }
+      }
+      experimental_debug_info {
+        original_node_names: "Assert"
+      }
+    }
+    node_def {
+      name: "Identity"
+      op: "Identity"
+      input: "assert_confusion_matrix_assert_less_1_all"
+      input: "^Assert"
+      attr {
+        key: "T"
+        value {
+          type: DT_BOOL
+        }
+      }
+      experimental_debug_info {
+        original_node_names: "Identity"
+      }
+    }
+    ret {
+      key: "identity"
+      value: "Identity:output:0"
+    }
+    arg_attr {
+      value {
+        attr {
+          key: "_output_shapes"
+          value {
+            list {
+              shape {
+              }
+            }
+          }
+        }
+      }
+    }
+    arg_attr {
+      key: 1
+      value {
+        attr {
+          key: "_output_shapes"
+          value {
+            list {
+              shape {
+                dim {
+                  size: -1
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    arg_attr {
+      key: 2
+      value {
+        attr {
+          key: "_output_shapes"
+          value {
+            list {
+              shape {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  function {
+    signature {
+      name: "confusion_matrix_assert_less_Assert_AssertGuard_true_350"
       input_arg {
         name: "identity_confusion_matrix_assert_less_all"
         type: DT_BOOL

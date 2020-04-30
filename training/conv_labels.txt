@@ -1,8 +1,6 @@
 _silence_
 _unknown_
-background_noise
 pneumonia
-heart_beat
 copd
 urti
 bronchiectasis
