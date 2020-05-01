@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:maxHeight="200dp"
+    android:minHeight="200dp">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="Recording time"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/mTimerTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="0:00:00"
+                    android:textColor="#ffffff"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <com.manjurulhoque.voicerecorder.VisualizerView
+                    android:id="@+id/visualizerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewDelete"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_delete" />
+
+                    <TextView
+                        android:id="@+id/textViewDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewPlay"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/play" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Record"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutStop"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageViewStop"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_stop" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stop"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

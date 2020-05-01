@@ -1,0 +1,7 @@
+_silence_
+_unknown_
+pneumonia
+copd
+urti
+bronchiectasis
+healthy

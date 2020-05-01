@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright 2019 The TensorFlow Authors. All Rights Reserved.
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:text="Digital Stethoscope AI"
+                android:layout_weight="1"
+                android:textSize="24sp"
+                />
+            <Button
+                android:id="@+id/btnRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:clickable="true"
+                android:text="Record"
+                android:background="@android:color/transparent"
+                />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_gravity="top"
+            android:background="@color/tfe_color_primary"
+            android:padding="10dp"
+            android:text="Place Digital Stethoscope around Trachea"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/tc" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/healthy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/round_corner_text_bg_unselected"
+                    android:gravity="center"
+                    android:text="Healthy" />
+
+                <TextView
+                    android:id="@+id/copd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/round_corner_text_bg_unselected"
+                    android:gravity="center"
+                    android:text="Chronic Obstructive Pulmonary Disease" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/upti"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/round_corner_text_bg_unselected"
+                    android:gravity="center"
+                    android:text="Upper Respiratory Tract Infection" />
+
+                <TextView
+                    android:id="@+id/pneumonia"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/round_corner_text_bg_unselected"
+                    android:gravity="center"
+                    android:text="Pneumonia" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/bronchiectasis"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/round_corner_text_bg_unselected"
+                    android:gravity="center"
+                    android:text="Bronchiectasis" />
+
+                <TextView
+                    android:id="@+id/other"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/round_corner_text_bg_unselected"
+                    android:gravity="center"
+                    android:text="Other" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottom_sheet_layout"
+        layout="@layout/tfe_sc_layout_bottom_sheet" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

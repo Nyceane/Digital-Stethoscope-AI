@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textViewNoRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No record found!"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewRecords"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabVoiceRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="60dp"
+            android:layout_marginEnd="36dp"
+            android:clickable="true"
+            app:backgroundTint="#585555"
+            app:elevation="0dp"
+            app:srcCompat="@drawable/ic_mic" />
+
+    </RelativeLayout>
+
+    <!--bottom sheet container-->
+    <FrameLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/bottom_sheet_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

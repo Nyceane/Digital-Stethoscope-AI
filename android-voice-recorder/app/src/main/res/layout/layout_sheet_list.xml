@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="10dp"
+                android:src="@drawable/ic_share" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Share"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/lyt_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="10dp"
+                android:src="@drawable/ic_play" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Play"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/lyt_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="13dp"
+                android:src="@drawable/ic_delete"
+                android:tint="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Delete"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+</LinearLayout>

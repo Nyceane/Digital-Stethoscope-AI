@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/record_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Record Name"
+            android:textColor="#000000" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/time_date"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginEnd="15dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:text="Time"-->
+        <!--android:textColor="#000000" />-->
+
+        <LinearLayout
+            android:id="@+id/layout_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/timeCurrent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0:00"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="6" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/timeDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0:00"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_Play"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/layout_seekbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/play" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/videoName"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/phone_number"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:text="Video Name"-->
+        <!--android:textColor="#000000" />-->
+    </RelativeLayout>
+
+</RelativeLayout>
